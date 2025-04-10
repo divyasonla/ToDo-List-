@@ -1,0 +1,131 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f7f9fc;
+    padding: 20px;
+    color: #333;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Success and error messages */
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Project Cards */
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background-color: #ffffff;
+    border-left: 6px solid #007BFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-item {
+    margin-bottom: 10px;
+}
+
+.card-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-value {
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    form, .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+.select-status {
+    padding: 8px 12px;
+    border: 2px solid #888;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 220px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.select-status:focus {
+    border-color: #5c9ded;
+    outline: none;
+}
